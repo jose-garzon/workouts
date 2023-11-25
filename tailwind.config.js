@@ -8,7 +8,11 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      padding: {
+        layout: "2.5rem",
+      },
+    },
   },
   darkMode: "class",
   plugins: [nextui()],
