@@ -2,7 +2,7 @@ import { Button, Link } from "@nextui-org/react";
 
 export const Landing = () => {
   return (
-    <div className="h-screen grid grid-rows-[1fr_auto] text-center p-layout">
+    <div className="h-[100dvh] grid grid-rows-[1fr_auto] text-center p-layout">
       <div className="self-center">
         <h1 className="font-bold">Workouts</h1>
         <p className="font-thin mt-2">
