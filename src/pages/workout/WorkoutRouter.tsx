@@ -1,7 +1,7 @@
 import { Route, Router, Switch, useRouter } from "wouter";
 import { Workout, WorkoutCreate, WorkoutList } from ".";
 
-export const WorkoutRouter = () => {
+export function WorkoutRouter() {
   const router = useRouter();
   return (
     <Router base="/workout" parent={router}>
@@ -18,4 +18,4 @@ export const WorkoutRouter = () => {
       </Switch>
     </Router>
   );
-};
+}

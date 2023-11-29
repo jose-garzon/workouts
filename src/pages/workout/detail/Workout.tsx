@@ -1,3 +1,3 @@
-export const Workout = () => {
+export function Workout() {
   return <div>Workout</div>;
-};
+}

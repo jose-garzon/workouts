@@ -1,6 +1,6 @@
 import { Button, Link } from "@nextui-org/react";
 
-export const Landing = () => {
+export function Landing() {
   return (
     <div className="h-[100dvh] grid grid-rows-[1fr_auto] text-center p-layout">
       <div className="self-center">
@@ -22,4 +22,4 @@ export const Landing = () => {
       </Button>
     </div>
   );
-};
+}

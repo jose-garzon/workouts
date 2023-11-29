@@ -6,7 +6,7 @@ interface WorkoutCardProps {
   activeDays: DayOfWeek[];
 }
 
-export const WorkoutCard = ({ title, activeDays }: WorkoutCardProps) => {
+export function WorkoutCard({ title, activeDays }: WorkoutCardProps) {
   const daysLabel: { [key in DayOfWeek]: string } = {
     monday: "M",
     tuesday: "T",
@@ -20,7 +20,7 @@ export const WorkoutCard = ({ title, activeDays }: WorkoutCardProps) => {
   const checkDayIsActive = (day: DayOfWeek) => activeDays.includes(day);
 
   return (
-    <Card fullWidth isPressable isBlurred>
+    <Card isPressable isBlurred radius="none" className="px-4">
       <CardHeader>
         <h2>{title}</h2>
       </CardHeader>
@@ -39,4 +39,4 @@ export const WorkoutCard = ({ title, activeDays }: WorkoutCardProps) => {
       </CardBody>
     </Card>
   );
-};
+}
