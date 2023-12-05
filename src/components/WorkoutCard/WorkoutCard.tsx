@@ -2,11 +2,11 @@ import { Card, CardBody, CardHeader, Chip } from "@nextui-org/react";
 import { DayOfWeek } from "../../domain/Days";
 
 interface WorkoutCardProps {
-  title: string;
+  name: string;
   activeDays: DayOfWeek[];
 }
 
-export function WorkoutCard({ title, activeDays }: WorkoutCardProps) {
+export function WorkoutCard({ name, activeDays }: WorkoutCardProps) {
   const daysLabel: { [key in DayOfWeek]: string } = {
     monday: "M",
     tuesday: "T",
@@ -22,7 +22,7 @@ export function WorkoutCard({ title, activeDays }: WorkoutCardProps) {
   return (
     <Card isPressable isBlurred radius="none" className="px-4">
       <CardHeader>
-        <h2>{title}</h2>
+        <h2>{name}</h2>
       </CardHeader>
       <CardBody>
         <div className="flex gap-1">

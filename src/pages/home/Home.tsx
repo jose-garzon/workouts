@@ -1,6 +1,6 @@
 import { WorkoutCard } from "../../components/WorkoutCard";
 import { workoutList } from "../../mocks/workouts.mock";
-
+// const workoutList = [];
 export function Home() {
   return (
     <div className="min-h-[100dvh] p-layout">
@@ -9,7 +9,7 @@ export function Home() {
         {workoutList.map((workout) => (
           <WorkoutCard
             key={workout.id}
-            title={workout.title}
+            name={workout.name}
             activeDays={workout.days}
           />
         ))}
