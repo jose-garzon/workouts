@@ -9,6 +9,9 @@ export function WorkoutRouter() {
         <Route path="/">
           <WorkoutList />
         </Route>
+        <Route path="/excercise">
+          <p>Excersise</p>
+        </Route>
         <Route path="/create">
           <WorkoutCreate />
         </Route>

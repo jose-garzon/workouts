@@ -14,7 +14,7 @@ export function Landing() {
         as={Link}
         fullWidth
         variant="shadow"
-        radius="full"
+        radius="none"
         color="primary"
         href="/app"
       >
