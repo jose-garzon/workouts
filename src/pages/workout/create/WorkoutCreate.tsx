@@ -14,7 +14,7 @@ export function WorkoutCreate() {
         radius="none"
         variant="shadow"
         color="primary"
-        href="/app/workout/excercise"
+        href="/app/excercise"
       >
         Add excercise
       </Button>
